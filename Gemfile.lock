@@ -47,6 +47,7 @@ GEM
     ast (2.4.0)
     autoprefixer-rails (9.1.0)
       execjs
+    bcrypt (3.1.12)
     bindex (0.5.0)
     bootsnap (1.3.1)
       msgpack (~> 1.0)
@@ -66,6 +67,12 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    devise (4.5.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 6.0)
+      responders
+      warden (~> 1.2.3)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.7.1)
@@ -272,6 +279,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
+    orm_adapter (0.5.0)
     ovirt-engine-sdk (4.2.4)
       json (>= 1, < 3)
     parallel (1.12.1)
@@ -321,6 +329,9 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.5)
       trollop (~> 2.1)
+    responders (2.4.0)
+      actionpack (>= 4.2.0, < 5.3)
+      railties (>= 4.2.0, < 5.3)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -372,6 +383,8 @@ GEM
       unf_ext
     unf_ext (0.0.7.5)
     unicode-display_width (1.4.0)
+    warden (1.2.7)
+      rack (>= 1.0)
     web-console (3.6.2)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -391,6 +404,7 @@ DEPENDENCIES
   byebug
   cocoon
   coffee-rails (~> 4.2)
+  devise
   faker
   fog (= 1.42)
   jbuilder (~> 2.5)
@@ -413,4 +427,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.3
+   1.16.5
