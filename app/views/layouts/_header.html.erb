@@ -12,4 +12,5 @@
       <%= link_to t(".home"), root_path, class: "nav-link active" %>
     </ul>
   </div>
+  <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
 </nav>
